@@ -1,0 +1,1 @@
+python scripts/run_training.py --task GERMEVAL24_MULTICLASS --c params/m4.yaml -i data/germeval24/germeval-competition-traindev.jsonl

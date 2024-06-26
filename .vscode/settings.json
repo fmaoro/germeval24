@@ -1,0 +1,26 @@
+{
+    "mypy.configFile": "pyproject.toml",
+    "mypy.runUsingActiveInterpreter": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
+        }
+    },
+    "ruff.format.args": ["--config=pyproject.toml"],
+    "ruff.lint.args": ["--config=pyproject.toml"],
+    "notebook.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+    },
+    "notebook.formatOnSave.enabled": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/.mypy_cache": true,
+    }
+}
