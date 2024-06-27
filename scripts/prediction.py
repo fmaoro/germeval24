@@ -502,9 +502,6 @@ def parse_bin_dist(
     for bin_one_tuple, _num_annotators in zip(bin_one, num_annotators):
         pred = bin_one_tuple[0]
         score: float = bin_one_tuple[1]
-        x = 0.4
-        y = 0.3
-        abs(x - y)
         possible_values: list[float] = np.linspace(
             start=0, stop=1, num=_num_annotators + 1
         ).tolist()
