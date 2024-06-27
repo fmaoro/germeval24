@@ -12,6 +12,8 @@ evaluate = "^0.4.1"
 pydantic = "^2.5.2"
 torch = "^2.1.1"
 accelerate = "^0.31.0"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -86,7 +88,7 @@ files = "germeval,scripts"
 check_untyped_defs = true
 
 [tool.pyright]
-include = ["src", "scripts"]
+include = ["germeval", "scripts"]
 exclude = [
     "**/node_modules",
     "**/__pycache__",
