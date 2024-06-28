@@ -35,22 +35,12 @@ logger = logging.getLogger()
 DATA_PATH = Path("data/germeval24/germeval-competition-test.jsonl")
 
 M1_PATH = Path("models/germeval24/gbert-large/m1/checkpoint-200")
-M2_PATH = Path(
-    "models/germeval24/gbert-large/m2/checkpoint-84"
-)  # f1 then vs. now (0.86, 0.97) (now with all training examples)
-M3_PATH = Path(
-    "models/germeval24/gbert-large/m3/checkpoint-154"
-)  # f1 then vs. now (0.99, 0.997) (now with all training examples)
-M4_PATH = Path(
-    "models/germeval24/gbert-large/m4/checkpoint-112"
-)  # f1 then vs. now (0.998, 0.995) (new)
-M5_PATH = Path(
-    "models/germeval24/gbert-large/m5/checkpoint-216"
-)  # f1 then vs. now (0.99, 0.994) (new)
-M6_PATH = Path(
-    "models/germeval24/gbert-large/m6/checkpoint-99"
-)  # f1 then vs. now (0.96, 0.97)
-M7_PATH = Path("models/germeval24/gbert-large/m7/checkpoint-14")  # f1 then vs. now ()
+M2_PATH = Path("models/germeval24/gbert-large/m2/checkpoint-84")
+M3_PATH = Path("models/germeval24/gbert-large/m3/checkpoint-154")
+M4_PATH = Path("models/germeval24/gbert-large/m4/checkpoint-112")
+M5_PATH = Path("models/germeval24/gbert-large/m5/checkpoint-216")
+M6_PATH = Path("models/germeval24/gbert-large/m6/checkpoint-99")
+M7_PATH = Path("models/germeval24/gbert-large/m7/checkpoint-14")
 
 
 class TextDataset(Dataset):
