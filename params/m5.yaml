@@ -2,16 +2,16 @@ train:
   training_args:
     output_dir: models/germeval24/gbert-large/m5
     save_strategy: epoch
-    evaluation_strategy: epoch
-    learning_rate: 2e-5
-    per_device_train_batch_size: 120
-    per_device_eval_batch_size: 120
-    num_train_epochs: 20
-    save_total_limit: 1
+    eval_strategy: epoch
+    learning_rate: 4e-5
+    per_device_train_batch_size: 250
+    per_device_eval_batch_size: 250
+    num_train_epochs: 30
     logging_dir: logs/germeval24/gbert-large/m5
-    metric_for_best_model: eval_f1
-    load_best_model_at_end: true
-    greater_is_better: true
+    # save_total_limit: 1
+    # metric_for_best_model: eval_f1
+    # load_best_model_at_end: true
+    # greater_is_better: true
     report_to: none
   model_name: deepset/gbert-large
   input_col: text
